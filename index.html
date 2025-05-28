@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Unknown Engineer</title>
+  <style>
+    /* Particles background */
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      background-color: #121212;
+    }
+    /* Page container */
+    .container {
+      position: relative;
+      z-index: 1; /* content above particles */
+      max-width: 600px;
+      padding: 2rem;
+      margin: 0 auto;
+      font-family: 'Courier New', Courier, monospace;
+      color: #e0e0e0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+    .tagline {
+      font-style: italic;
+      color: #999999;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .ai-partner {
+      color: #66c0f4;
+      font-style: italic;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      user-select: none;
+    }
+    .terminal {
+      background-color: #1e1e1e;
+      padding: 1.8rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #222;
+      line-height: 1.5;
+    }
+    .terminal h2 {
+      color: #7ee787;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
+    ul li::before {
+      content: "› ";
+      color: #66c0f4;
+    }
+    .powered {
+      margin-top: 2rem;
+      font-weight: bold;
+      color: #8b8b8b;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .welcome p {
+      font-style: italic;
+      color: #a0a0a0;
+      margin: 0.4rem 0;
+    }
+    a.email-link {
+      color: #66c0f4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+    .footer-note {
+      color: #999999;
+      font-style: italic;
+      text-align: center;
+      margin-top: 0.2rem;
+      user-select: none;
+    }
+  </style>
+  <!-- Particles.js CDN -->
+  <script src="particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <h1>&lt;/&gt; Unknown Engineer</h1>
+    <p class="tagline">Code in silence. Let systems speak.</p>
+    <p class="ai-partner">AI is my partner 🤖</p>
+
+    <section class="terminal">
+      <div class="welcome">
+        <p>👋 Hello! Thanks for stopping by.</p>
+        <p>This is a quiet space where code and AI combine to build tools that make life easier.</p>
+        <p>Feel free to explore, and when you're ready, just send a quick email to connect.</p>
+      </div>
+
+      <h2>What I Build</h2>
+      <p>I specialize in crafting end-to-end solutions — from backend systems to stunning websites:</p>
+      <ul>
+        <li>⚙️ Custom Systems (PHP, MySQL, Laravel)</li>
+        <li>🌐 WordPress & Shopify Sites</li>
+        <li>📦 Wix Stores & Landing Pages</li>
+        <li>🔐 Admin Panels, Portals & Dashboards</li>
+        <li>📊 Business Tools & Data-Driven Apps</li>
+      </ul>
+
+      <h2>Work Style</h2>
+      <p>No meetings. No video calls. Just plain text communication — efficient, asynchronous, and focused on results.</p>
+      <p>No branding. No noise. Just clean output, delivered.</p>
+
+      <h2>Contact</h2>
+      <p>Reach out via email: <a href="mailto:roadto1million.dev@gmail.com" class="email-link">roadto1million.dev@gmail.com</a></p>
+
+      <p class="powered">Powered by AI.</p>
+      <p class="footer-note">🚀 Road to a million dollars profit — a one-man company journey. Help me.</p>
+    </section>
+  </div>
+
+  <script>
+    /* Initialize particles.js */
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#66c0f4" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3, random: true },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#66c0f4",
+          opacity: 0.15,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        },
+        modes: {}
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
