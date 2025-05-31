@@ -2,93 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Support Our Wedding</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unknown Engineer</title>
   <style>
-    body {
-      background-color: #fffaf5;
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+    /* Particles background */
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 0;
+      background-color: #121212;
+    }
+    /* Page container */
+    .container {
+      position: relative;
+      z-index: 1; /* content above particles */
+      max-width: 600px;
       padding: 2rem;
-      text-align: center;
+      margin: 0 auto;
+      font-family: 'Courier New', Courier, monospace;
+      color: #e0e0e0;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 2.5rem;
+      margin-bottom: 0;
     }
-    p {
-      max-width: 400px;
+    .tagline {
+      font-style: italic;
+      color: #999999;
+      margin-top: 0.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .ai-partner {
+      color: #66c0f4;
+      font-style: italic;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      user-select: none;
+    }
+    .terminal {
+      background-color: #1e1e1e;
+      padding: 1.8rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #222;
+      line-height: 1.5;
+    }
+    .terminal h2 {
+      color: #7ee787;
+      margin-top: 0;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1rem;
+      margin-top: 0;
       margin-bottom: 1.5rem;
     }
-    .wallet {
-      background: #fff;
-      border: 2px dashed #ffafcc;
-      padding: 1rem;
-      border-radius: 10px;
-      font-weight: bold;
-      color: #d6336c;
-      margin-bottom: 1rem;
-      word-break: break-word;
+    ul li::before {
+      content: "› ";
+      color: #66c0f4;
     }
-    button {
-      background-color: #d6336c;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      padding: 0.5rem 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #c2185b;
-    }
-    .copied {
-      margin-top: 0.5rem;
-      color: #4caf50;
-    }
-    footer {
+    .powered {
       margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #777;
+      font-weight: bold;
+      color: #8b8b8b;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    .welcome p {
+      font-style: italic;
+      color: #a0a0a0;
+      margin: 0.4rem 0;
+    }
+    a.email-link {
+      color: #66c0f4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.email-link:hover {
+      text-decoration: underline;
+    }
+    .footer-note {
+      color: #999999;
+      font-style: italic;
+      text-align: center;
+      margin-top: 0.2rem;
+      user-select: none;
     }
   </style>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxMDAgMTAwJz48dGV4dCB5PScuOWVtJyBmb250LXNpemU9JzkwJz7wn5iKPC90ZXh0Pjwvc3ZnPg==" />
+  <!-- Particles.js CDN -->
+  <script src="particles.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
 
 </head>
 <body>
+  <div id="particles-js"></div>
 
-  <h1>💒 Help Us Make Our Wedding Special</h1>
-  <p>We're getting married soon! If you’d like to support us with a small donation, we would truly appreciate your kindness. Every bit helps. 🙏</p>
+  <div class="container">
+    <h1>&lt;/&gt; Unknown Engineer</h1>
+    <p class="tagline">Code in silence. Let systems speak.</p>
+    <p class="ai-partner">AI is my partner 🤖</p>
 
-  <div class="wallet" id="wallet-address">TX5owrcRcn8MmUm8mgdPXtXfnHjpjtZ3R1</div>
-    <button onclick="copyAddress()">Copy USDT Wallet Address</button>
-    <div class="copied" id="copied-message" style="display: none;">Address copied to clipboard ✅</div>
+    <section class="terminal">
+      <div class="welcome">
+        <p>👋 Hello! Thanks for stopping by.</p>
+        <p>This is a quiet space where code and AI combine to build tools that make life easier.</p>
+        <p>Feel free to explore, and when you're ready, just send a quick email to connect.</p>
+      </div>
 
-    <!-- Add your QR code images here -->
-    <div style="margin-top: 1.5rem;">
-    <img src="binance-qr.jpeg" alt="Binance USDT QR Code" style="width: 200px; border-radius: 10px; margin-right: 1rem;">
-    </div>
+      <h2>What I Build</h2>
+      <p>I specialize in crafting end-to-end solutions — from backend systems to stunning websites:</p>
+      <ul>
+        <li>⚙️ Custom Systems (PHP, MySQL, Laravel)</li>
+        <li>🌐 WordPress & Shopify Sites</li>
+        <li>📦 Wix Stores & Landing Pages</li>
+        <li>🔐 Admin Panels, Portals & Dashboards</li>
+        <li>📊 Business Tools & Data-Driven Apps</li>
+      </ul>
 
-  <footer>
-    With love and thanks – from the future Mr. & Mrs.
-  </footer>
+      <h2>Work Style</h2>
+      <p>No meetings. No video calls. Just plain text communication — efficient, asynchronous, and focused on results.</p>
+      <p>No branding. No noise. Just clean output, delivered.</p>
+
+      <h2>Contact</h2>
+      <p>Reach out via email: <a href="mailto:roadto1million.dev@gmail.com" class="email-link">roadto1million.dev@gmail.com</a></p>
+
+      <p class="powered">Powered by AI.</p>
+      <p class="footer-note">🚀 Road to a million dollars profit — a one-man company journey. Help me.</p>
+    </section>
+  </div>
 
   <script>
-    function copyAddress() {
-      const wallet = document.getElementById("wallet-address").innerText;
-      navigator.clipboard.writeText(wallet).then(() => {
-        document.getElementById("copied-message").style.display = "block";
-        setTimeout(() => {
-          document.getElementById("copied-message").style.display = "none";
-        }, 3000);
-      });
-    }
+    /* Initialize particles.js */
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 50, density: { enable: true, value_area: 800 } },
+        color: { value: "#66c0f4" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3, random: true },
+        size: { value: 3, random: true },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#66c0f4",
+          opacity: 0.15,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 1.5,
+          direction: "none",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        },
+        modes: {}
+      },
+      retina_detect: true
+    });
   </script>
-
 </body>
 </html>
